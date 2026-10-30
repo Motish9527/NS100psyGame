@@ -3,23 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#183c32">
-  <meta name="description" content="用 12 道職場情境題，探索你的職場動物與優勢特質。">
-  <title>你的職場動物是哪一種？｜牛馬再就業協會</title>
+  <meta name="theme-color" content="#fff8ed">
+  <meta name="description" content="用 13 道保險業工作情境題，探索你的業務特質與職場動物。">
+  <title>你是哪種保險業務夥伴？｜牛馬再就業協會</title>
   <style>
     :root {
       color-scheme: light;
-      --forest: #183c32;
-      --forest-deep: #102b24;
-      --leaf: #577c5c;
-      --lime: #d3e2a8;
-      --cream: #f7f5eb;
-      --paper: #fffef9;
-      --ink: #20342c;
-      --muted: #738078;
-      --line: #e3e7dc;
-      --orange: #e9a365;
-      --shadow: 0 24px 70px rgba(25, 55, 43, .12);
+      --brand-dark: #5b382b;
+      --brand-coral: #b74325;
+      --brand-amber: #ef8508;
+      --brand-highlight: #ffc078;
+      --cream: #fff8ed;
+      --paper: #fffefb;
+      --ink: #342d29;
+      --muted: #766d67;
+      --line: #eadfd3;
+      --shadow: 0 24px 70px rgba(91, 56, 43, .12);
       font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
       font-synthesis: none;
       text-rendering: optimizeLegibility;
@@ -33,13 +32,13 @@
       margin: 0;
       color: var(--ink);
       background:
-        radial-gradient(ellipse at 2% 12%, rgba(211, 226, 168, .23), transparent 28rem),
-        radial-gradient(ellipse at 96% 78%, rgba(233, 163, 101, .12), transparent 24rem),
+        radial-gradient(ellipse at 2% 12%, rgba(252, 103, 54, .12), transparent 28rem),
+        radial-gradient(ellipse at 96% 78%, rgba(239, 133, 8, .1), transparent 24rem),
         var(--cream);
     }
 
     button { font: inherit; }
-    button:focus-visible { outline: 3px solid #d38b4e; outline-offset: 3px; }
+    button:focus-visible { outline: 3px solid var(--brand-coral); outline-offset: 3px; }
     [hidden] { display: none !important; }
 
     .site-header {
@@ -55,7 +54,7 @@
       display: flex;
       align-items: center;
       gap: 11px;
-      color: var(--forest);
+      color: var(--brand-dark);
       font-size: .88rem;
       font-weight: 800;
       letter-spacing: .06em;
@@ -66,7 +65,7 @@
       width: 36px;
       height: 36px;
       place-items: center;
-      border: 1px solid rgba(24, 60, 50, .2);
+      border: 1px solid rgba(91, 56, 43, .2);
       border-radius: 50%;
       font-size: 1.15rem;
     }
@@ -91,9 +90,9 @@
       gap: clamp(32px, 6vw, 82px);
       padding: clamp(28px, 5vw, 66px);
       overflow: hidden;
-      border: 1px solid rgba(24, 60, 50, .08);
+      border: 1px solid rgba(91, 56, 43, .08);
       border-radius: 30px;
-      background: rgba(255, 254, 249, .85);
+      background: rgba(255, 254, 251, .88);
       box-shadow: var(--shadow);
     }
 
@@ -102,7 +101,7 @@
       align-items: center;
       gap: 9px;
       margin: 0 0 23px;
-      color: var(--leaf);
+      color: var(--brand-coral);
       font-size: .78rem;
       font-weight: 800;
       letter-spacing: .17em;
@@ -112,7 +111,7 @@
     .eyebrow::before {
       width: 23px;
       height: 1px;
-      background: var(--leaf);
+      background: var(--brand-coral);
       content: "";
     }
 
@@ -121,7 +120,7 @@
     .hero h1 {
       max-width: 540px;
       margin-bottom: 15px;
-      color: var(--forest);
+      color: var(--brand-dark);
       font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
       font-size: clamp(2.6rem, 5vw, 4.65rem);
       font-weight: 700;
@@ -131,14 +130,14 @@
 
     .hero h1 span {
       display: block;
-      color: var(--leaf);
+      color: var(--brand-coral);
       font-size: .58em;
       letter-spacing: .12em;
     }
 
     .hero-lead {
       margin: 24px 0 11px;
-      color: #435b4c;
+      color: #79513e;
       font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
       font-size: clamp(1.05rem, 2vw, 1.3rem);
       line-height: 1.8;
@@ -167,15 +166,15 @@
     }
 
     .primary-button {
-      color: #fffef8;
-      background: var(--forest);
-      box-shadow: 0 9px 22px rgba(24, 60, 50, .18);
+      color: #fffefb;
+      background: #b74325;
+      box-shadow: 0 9px 22px rgba(183, 67, 37, .2);
     }
 
     .primary-button:hover:not(:disabled) {
       transform: translateY(-2px);
-      background: #285445;
-      box-shadow: 0 12px 25px rgba(24, 60, 50, .24);
+      background: #96391f;
+      box-shadow: 0 12px 25px rgba(183, 67, 37, .25);
     }
 
     .primary-button:disabled {
@@ -196,7 +195,7 @@
 
     .hero-meta span::before {
       margin-right: 7px;
-      color: var(--leaf);
+      color: var(--brand-coral);
       content: "✳";
     }
 
@@ -208,8 +207,8 @@
       overflow: hidden;
       border-radius: 220px 220px 27px 27px;
       background:
-        radial-gradient(circle at 50% 25%, rgba(222, 237, 177, .2), transparent 33%),
-        linear-gradient(160deg, #315f4a, #183c32 62%, #122d26);
+        radial-gradient(circle at 50% 25%, rgba(239, 133, 8, .25), transparent 33%),
+        linear-gradient(160deg, #df6539, #a94226 62%, #5b382b);
       isolation: isolate;
     }
 
@@ -218,7 +217,7 @@
       z-index: -1;
       width: 210px;
       height: 300px;
-      border: 1px solid rgba(211, 226, 168, .23);
+      border: 1px solid rgba(255, 194, 130, .34);
       border-radius: 100% 0 100% 0;
       content: "";
       transform: rotate(27deg);
@@ -234,15 +233,15 @@
       width: 74px;
       height: 74px;
       border-radius: 50%;
-      background: rgba(226, 230, 171, .85);
-      box-shadow: 0 0 56px rgba(226, 230, 171, .24);
+      background: rgba(255, 190, 94, .9);
+      box-shadow: 0 0 56px rgba(255, 190, 94, .3);
     }
 
     .cover-orbit {
       position: absolute;
       width: 76%;
       aspect-ratio: 1;
-      border: 1px solid rgba(245, 245, 213, .3);
+      border: 1px solid rgba(255, 231, 202, .4);
       border-radius: 50%;
     }
 
@@ -251,7 +250,7 @@
       width: 13px;
       height: 13px;
       border-radius: 50%;
-      background: var(--lime);
+      background: var(--brand-highlight);
       content: "";
     }
 
@@ -265,12 +264,19 @@
       width: min(70%, 260px);
       aspect-ratio: 1;
       place-items: center;
-      border: 1px solid rgba(255, 255, 255, .18);
+      border: 1px solid rgba(255, 255, 255, .28);
       border-radius: 50%;
-      background: rgba(245, 247, 222, .08);
-      color: #fff8df;
+      background: rgba(255, 238, 215, .12);
+      color: #fff8ed;
       font-size: clamp(6.5rem, 12vw, 10rem);
       filter: drop-shadow(0 13px 15px rgba(0, 0, 0, .18));
+    }
+
+    .cover-animal img {
+      width: 84%;
+      height: 84%;
+      object-fit: contain;
+      filter: drop-shadow(0 9px 10px rgba(91, 56, 43, .14));
     }
 
     .cover-caption {
@@ -298,7 +304,7 @@
       width: min(820px, 100%);
       margin: 25px auto 0;
       padding: clamp(25px, 5vw, 54px);
-      border: 1px solid rgba(24, 60, 50, .08);
+      border: 1px solid rgba(91, 56, 43, .08);
       border-radius: 28px;
       background: var(--paper);
       box-shadow: var(--shadow);
@@ -316,27 +322,27 @@
       letter-spacing: .09em;
     }
 
-    .quiz-count { color: var(--forest); }
+    .quiz-count { color: var(--brand-dark); }
 
     .progress-track {
       height: 6px;
       margin-bottom: 38px;
       overflow: hidden;
       border-radius: 99px;
-      background: #e9ede3;
+      background: #f1e8de;
     }
 
     .progress-value {
       width: 0;
       height: 100%;
       border-radius: inherit;
-      background: linear-gradient(90deg, #779a66, #c0d68e);
+      background: linear-gradient(90deg, var(--brand-coral), var(--brand-amber));
       transition: width .3s ease;
     }
 
     .question-kicker {
       margin-bottom: 9px;
-      color: var(--leaf);
+      color: var(--brand-coral);
       font-size: .8rem;
       font-weight: 800;
       letter-spacing: .12em;
@@ -344,7 +350,7 @@
 
     .quiz-panel h2, .result-panel h2 {
       margin-bottom: 13px;
-      color: var(--forest);
+      color: var(--brand-dark);
       font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
       font-size: clamp(1.55rem, 4vw, 2.25rem);
       line-height: 1.45;
@@ -373,7 +379,7 @@
       border: 1px solid var(--line);
       border-radius: 15px;
       color: var(--ink);
-      background: #fff;
+      background: #fffefb;
       cursor: pointer;
       text-align: left;
       transition: border-color .16s ease, background .16s ease, transform .16s ease;
@@ -381,14 +387,14 @@
 
     .answer-option:hover {
       transform: translateY(-1px);
-      border-color: #9ab18b;
-      background: #fbfcf5;
+      border-color: #efaa7b;
+      background: #fffaf3;
     }
 
     .answer-option[aria-pressed="true"] {
-      border-color: var(--leaf);
-      background: #f1f5e8;
-      box-shadow: inset 0 0 0 1px var(--leaf);
+      border-color: var(--brand-coral);
+      background: #fff0e7;
+      box-shadow: inset 0 0 0 1px var(--brand-coral);
     }
 
     .answer-letter {
@@ -397,21 +403,21 @@
       height: 34px;
       place-items: center;
       border-radius: 50%;
-      color: var(--leaf);
-      background: #eff3e8;
+      color: var(--brand-coral);
+      background: #fff0e5;
       font-size: .85rem;
       font-weight: 900;
     }
 
     .answer-option[aria-pressed="true"] .answer-letter {
       color: white;
-      background: var(--leaf);
+      background: var(--brand-coral);
     }
 
     .answer-text { font-size: .94rem; line-height: 1.65; }
 
     .answer-check {
-      color: var(--leaf);
+      color: var(--brand-coral);
       font-size: 1rem;
       opacity: 0;
     }
@@ -430,74 +436,413 @@
       min-height: 48px;
       padding: 0 19px;
       border: 1px solid var(--line);
-      color: var(--forest);
+      color: var(--brand-dark);
       background: transparent;
     }
 
-    .secondary-button:hover { background: #f1f4eb; }
+    .secondary-button:hover { background: #fff3e7; }
 
     .quiz-actions .primary-button { min-height: 48px; }
 
-    .result-panel { text-align: center; }
-
-    .result-symbol {
-      display: grid;
-      width: 114px;
-      height: 114px;
-      margin: 0 auto 20px;
-      place-items: center;
-      border: 1px solid #dce5ce;
-      border-radius: 50%;
-      background: #f1f5e7;
-      font-size: 4.2rem;
+    .result-panel {
+      width: min(660px, 100%);
+      padding: 0;
+      overflow: hidden;
+      border: 0;
+      background: transparent;
+      box-shadow: none;
+      text-align: center;
     }
 
-    .result-panel .eyebrow { margin-bottom: 12px; }
-    .result-panel .eyebrow::before { display: none; }
+    .personality-card {
+      overflow: hidden;
+      border: 1px solid #f1e2cf;
+      border-radius: 28px;
+      background: #fffaf1;
+      box-shadow: var(--shadow);
+      text-align: left;
+    }
+
+    .personality-card-topline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 19px 25px 15px;
+      color: var(--forest);
+      background: #fffaf1;
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: .08em;
+    }
+
+    .personality-card-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .personality-card-brand::before {
+      display: grid;
+      width: 27px;
+      height: 27px;
+      place-items: center;
+      border: 1px solid #ead3b5;
+      border-radius: 50%;
+      color: var(--brand-coral);
+      content: "♧";
+      font-size: .95rem;
+    }
+
+    .personality-card-edition {
+      color: #8d7965;
+      font-size: .68rem;
+      font-weight: 600;
+      letter-spacing: .05em;
+    }
+
+    .result-cover {
+      position: relative;
+      min-height: 380px;
+      padding: 30px 28px 0;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 82% 24%, rgba(255, 202, 104, .88) 0 10%, transparent 10.3%),
+        radial-gradient(ellipse at 82% 27%, rgba(255, 213, 139, .25), transparent 30%),
+        linear-gradient(180deg, #fff4df 0%, #ffefd1 67%, #f8d795 100%);
+      isolation: isolate;
+    }
+
+    .result-cover::before,
+    .result-cover::after {
+      position: absolute;
+      z-index: -1;
+      right: -7%;
+      bottom: -61px;
+      left: -7%;
+      height: 150px;
+      border-radius: 50% 50% 0 0 / 43% 43% 0 0;
+      background: rgba(238, 157, 69, .31);
+      content: "";
+      transform: rotate(-4deg);
+    }
+
+    .result-cover::after {
+      right: 25%;
+      bottom: -82px;
+      left: -15%;
+      height: 130px;
+      background: rgba(218, 112, 52, .22);
+      transform: rotate(7deg);
+    }
+
+    .result-cover-copy {
+      position: relative;
+      z-index: 2;
+      max-width: 62%;
+    }
+
+    .result-cover .eyebrow {
+      margin: 0 0 14px;
+      color: #72523c;
+      font-size: .68rem;
+      letter-spacing: .13em;
+    }
+
+    .result-cover .eyebrow::before { background: var(--brand-coral); }
+
+    .result-panel h2 {
+      width: fit-content;
+      margin: 0 0 13px;
+      color: #173c34;
+      font-size: clamp(2.6rem, 8vw, 4.4rem);
+      font-weight: 900;
+      letter-spacing: .1em;
+      line-height: 1.15;
+      text-shadow: 0 2px 0 rgba(255, 255, 255, .35);
+    }
+
+    .result-panel h2::after {
+      display: block;
+      height: 9px;
+      margin: -5px 0 0;
+      border-radius: 100%;
+      background: rgba(255, 183, 70, .7);
+      content: "";
+      transform: rotate(-2deg);
+    }
+
+    .result-cover-quote {
+      max-width: 290px;
+      margin: 18px 0 0;
+      color: #55453a;
+      font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+      font-size: clamp(.98rem, 2.7vw, 1.15rem);
+      font-weight: 600;
+      line-height: 1.8;
+      white-space: pre-line;
+    }
+
+    .result-illustration {
+      position: absolute;
+      z-index: 1;
+      right: 2%;
+      bottom: 11px;
+      display: flex;
+      width: 58%;
+      height: 67%;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 0;
+      pointer-events: none;
+    }
+
+    .result-illustration img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 10px 12px rgba(111, 63, 31, .12));
+    }
+
+    .result-illustration-fallback {
+      display: grid;
+      width: 72%;
+      height: 82%;
+      place-items: center;
+      border: 1px solid rgba(183, 67, 37, .16);
+      border-radius: 50%;
+      color: var(--brand-coral);
+      background: rgba(255, 250, 241, .56);
+      font-size: clamp(5.5rem, 18vw, 9rem);
+      filter: drop-shadow(0 10px 12px rgba(111, 63, 31, .12));
+    }
+
+    .result-cover-caption {
+      position: absolute;
+      z-index: 2;
+      right: 21px;
+      bottom: 14px;
+      left: 21px;
+      color: #fffaf1;
+      font-family: "Noto Serif TC", "Songti TC", serif;
+      font-size: .73rem;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-align: center;
+      text-shadow: 0 1px 5px rgba(87, 47, 28, .4);
+    }
+
+    .result-card-body {
+      position: relative;
+      z-index: 2;
+      margin-top: -1px;
+      padding: 27px 26px 24px;
+      border-radius: 27px 27px 0 0;
+      background: #fffaf1;
+    }
+
+    .result-traits {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 17px;
+    }
+
+    .result-traits-label {
+      margin-right: 2px;
+      color: var(--forest);
+      font-family: "Noto Serif TC", "Songti TC", serif;
+      font-size: 1.03rem;
+      font-weight: 900;
+    }
+
+    .result-trait-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .trait-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 13px;
+      border: 1px solid #f5e1bd;
+      border-radius: 999px;
+      color: #4c483d;
+      background: #fff0cf;
+      font-size: .84rem;
+      font-weight: 750;
+    }
+
+    .trait-chip::before {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--brand-coral);
+      content: "";
+    }
 
     .result-summary {
-      max-width: 625px;
-      margin: 0 auto 29px;
-      color: var(--muted);
-      line-height: 1.9;
+      margin: 0 0 21px;
+      color: #45443b;
+      font-size: .91rem;
+      line-height: 1.85;
     }
 
     .result-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
-      gap: 13px;
-      margin: 24px 0;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 19px;
+      margin: 0;
       text-align: left;
     }
 
+    .result-animal-group { min-width: 0; }
+
+    .result-animal-heading {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0 0 10px;
+      color: var(--forest);
+      font-size: .96rem;
+      font-weight: 900;
+    }
+
+    .result-animal-cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 11px;
+    }
+
     .result-card {
-      padding: 20px;
-      border: 1px solid var(--line);
+      min-height: 143px;
+      padding: 15px;
+      border: 1px solid #f2dfc8;
       border-radius: 17px;
-      background: #fcfcf7;
+      background: rgba(255, 252, 246, .9);
     }
 
     .result-card-heading {
       display: flex;
       align-items: center;
-      gap: 10px;
-      margin-bottom: 10px;
-      color: var(--forest);
-      font-size: 1.08rem;
+      gap: 9px;
+      margin-bottom: 8px;
+      color: var(--brand-dark);
+      font-size: .94rem;
       font-weight: 900;
     }
 
-    .result-card-heading span { font-size: 1.6rem; }
-    .result-card p { margin: 0; color: #617067; font-size: .88rem; line-height: 1.8; }
-    .result-card p + p { margin-top: 10px; }
-    .result-card strong { color: var(--forest); }
+    .result-card-icon {
+      display: grid;
+      width: 36px;
+      height: 36px;
+      flex: 0 0 36px;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--brand-coral);
+      background: #ffefd0;
+      font-size: 1.2rem;
+    }
 
-    .result-motto {
-      margin: 25px 0 0;
-      color: var(--leaf);
+    .result-card p { margin: 0; color: #6a5a4d; font-size: .79rem; line-height: 1.7; }
+
+    .result-brand-close {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 15px 20px 19px;
+      color: #735941;
+      font-family: "Noto Serif TC", "Songti TC", serif;
+      font-size: .9rem;
+      font-weight: 800;
+      letter-spacing: .08em;
+    }
+
+    .result-brand-close::before,
+    .result-brand-close::after {
+      width: 23px;
+      height: 1px;
+      background: #e8c99e;
+      content: "";
+    }
+
+    .score-chart-section {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      justify-items: center;
+      margin-top: 20px;
+      padding: 27px 26px;
+      border: 1px solid #f1e2cf;
+      border-radius: 24px;
+      background: #fffaf1;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    .score-chart-section h3 {
+      margin: 0 0 7px;
+      color: var(--brand-dark);
       font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
-      font-size: 1.15rem;
-      line-height: 1.8;
+      font-size: 1.4rem;
+    }
+
+    .score-chart-subtitle {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: .88rem;
+      line-height: 1.7;
+    }
+
+    .score-chart-layout {
+      display: grid;
+      width: min(100%, 520px);
+      grid-template-columns: minmax(150px, 210px) minmax(0, 1fr);
+      align-items: center;
+      gap: 24px;
+    }
+
+    .score-chart {
+      display: block;
+      width: 100%;
+      height: auto;
+      overflow: visible;
+    }
+
+    .score-chart-legend {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: left;
+    }
+
+    .score-chart-legend li {
+      display: grid;
+      grid-template-columns: 12px minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 9px;
+      color: #5e5147;
+      font-size: .86rem;
+    }
+
+    .score-chart-legend li.is-winner {
+      color: var(--brand-dark);
+      font-weight: 900;
+    }
+
+    .score-chart-swatch {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+
+    .score-chart-percent {
+      font-variant-numeric: tabular-nums;
     }
 
     .result-actions {
@@ -505,7 +850,7 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 11px;
-      margin-top: 26px;
+      margin-top: 19px;
     }
 
     .share-fallback {
@@ -533,7 +878,7 @@
     .notice {
       min-height: 1.5em;
       margin: 12px 0 0;
-      color: var(--leaf);
+      color: var(--brand-coral);
       font-size: .85rem;
     }
 
@@ -541,7 +886,7 @@
       width: min(1120px, calc(100% - 48px));
       margin: 0 auto;
       padding: 0 0 28px;
-      color: #7a867d;
+      color: #786b62;
       font-size: .75rem;
       line-height: 1.8;
       text-align: center;
@@ -569,7 +914,23 @@
       .cover-caption { bottom: 17px; font-size: .75rem; }
       .hero h1 { font-size: clamp(2.6rem, 12vw, 4rem); }
       .shell { padding-top: 5px; }
-      .quiz-panel, .result-panel { padding: 25px 19px; border-radius: 22px; }
+      .quiz-panel { padding: 25px 19px; border-radius: 22px; }
+      .personality-card { border-radius: 22px; }
+      .personality-card-topline { padding: 15px 17px 12px; }
+      .result-cover { min-height: 340px; padding: 25px 19px 0; }
+      .result-cover-copy { max-width: 70%; }
+      .result-panel h2 { font-size: clamp(2.4rem, 11vw, 3.4rem); }
+      .result-illustration { right: 0; width: 63%; height: 64%; }
+      .result-cover-caption { font-size: .66rem; }
+      .result-card-body { padding: 22px 18px 19px; }
+      .score-chart-section { padding: 22px 17px; }
+      .score-chart-layout { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+      .score-chart { width: min(72%, 210px); }
+      .score-chart-legend { width: min(100%, 320px); }
+      .result-card { min-height: 138px; padding: 12px; }
+      .result-card-heading { gap: 7px; font-size: .84rem; }
+      .result-card-icon { width: 32px; height: 32px; flex-basis: 32px; }
+      .result-card p { font-size: .75rem; }
       .progress-track { margin-bottom: 28px; }
       .answer-option { grid-template-columns: 34px 1fr 14px; gap: 10px; padding: 12px; }
       .answer-letter { width: 31px; height: 31px; }
@@ -577,6 +938,15 @@
       .quiz-actions { margin-top: 22px; }
       .quiz-actions .primary-button, .secondary-button { min-height: 45px; padding: 0 15px; font-size: .88rem; }
       .site-footer { padding-bottom: 20px; }
+    }
+
+    @media (max-width: 360px) {
+      .result-animal-cards { grid-template-columns: 1fr; }
+      .result-card { min-height: 0; }
+      .result-cover { min-height: 320px; }
+      .result-cover-copy { max-width: 74%; }
+      .result-illustration { width: 65%; }
+      .score-chart-legend li { font-size: .8rem; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -587,39 +957,39 @@
 <body>
   <header class="site-header">
     <div class="brand"><span class="brand-mark" aria-hidden="true">♧</span>牛馬再就業協會</div>
-    <div class="header-note">職涯探索・從認識自己開始</div>
+    <div class="header-note">保險業務探索・從認識自己開始</div>
   </header>
 
   <main class="shell">
     <section class="hero" id="intro" aria-labelledby="main-title">
       <div class="hero-copy">
-        <p class="eyebrow">A little journey to your next pasture</p>
-        <h1 id="main-title"><span>職場動物心理測驗</span>找到你的<br>職涯牧場</h1>
-        <p class="hero-lead">在成為職場牛馬以前，<br>先認識自己的發光方式。</p>
-        <p class="hero-description">面對客戶、夥伴與工作挑戰，你最自然的反應是什麼？用 12 道情境選擇題，看看哪一種職場動物最能代表此刻的你。</p>
+        <p class="eyebrow">A little journey in insurance</p>
+        <h1 id="main-title"><span>保險業務特質測驗</span>找到你的<br>職涯牧場</h1>
+        <p class="hero-lead">面對客戶與工作挑戰，<br>找到你最自然的發光方式。</p>
+        <p class="hero-description">從開發客戶、理解需求到團隊合作，<span id="question-total-copy">13</span> 道保險業工作情境題，帶你看看哪一種職場動物最能代表此刻的你。</p>
         <button class="primary-button" id="start-button" type="button">出發探索 <span class="arrow" aria-hidden="true">↗</span></button>
         <div class="hero-meta" aria-label="測驗資訊">
-          <span>約 3 分鐘</span>
-          <span>12 道情境題</span>
-          <span>6 種職場動物</span>
+          <span>約 4 分鐘</span>
+          <span><span id="question-total-meta">13</span> 道情境題</span>
+          <span>6 種業務特質</span>
         </div>
       </div>
-      <div class="cover-art" aria-label="綠意森林中的職場動物插畫" role="img">
+      <div class="cover-art" aria-label="暖色夕陽與光圈中的職場動物插畫" role="img">
         <div class="cover-sun"></div>
         <div class="cover-orbit"></div>
-        <div class="cover-animal" aria-hidden="true">🐂</div>
-        <div class="cover-caption">每種特質，都有自己的舞台</div>
+        <div class="cover-animal" aria-hidden="true"><img src="assets/cow.png" alt=""></div>
+        <div class="cover-caption">每種特質，都能成為服務客戶的力量</div>
       </div>
     </section>
 
-    <p class="intro-note" id="intro-note">沒有標準答案，也不是專業心理診斷。請跟著直覺選出最像自己的做法，讓這趟旅程成為探索優勢的小小起點。</p>
+    <p class="intro-note" id="intro-note">沒有標準答案。請依照你最可能採取的做法作答，從中探索自己在客戶服務、需求分析與團隊合作上的特質。實際服務時，保單與理賠資訊應先查證，也請尊重客戶和夥伴。</p>
 
     <section class="quiz-panel" id="quiz" aria-labelledby="question-title" hidden>
       <div class="quiz-topline">
-        <span>職場情境探索</span>
-        <span class="quiz-count" id="quiz-count">01 / 12</span>
+        <span>保險業務情境探索</span>
+        <span class="quiz-count" id="quiz-count">01 / 13</span>
       </div>
-      <div class="progress-track" role="progressbar" aria-label="測驗進度" aria-valuemin="0" aria-valuemax="12" aria-valuenow="0">
+      <div class="progress-track" role="progressbar" aria-label="測驗進度" aria-valuemin="0" aria-valuemax="13" aria-valuenow="0">
         <div class="progress-value" id="progress-value"></div>
       </div>
       <p class="question-kicker" id="question-kicker">情境 01</p>
@@ -633,12 +1003,39 @@
     </section>
 
     <section class="result-panel" id="result" aria-labelledby="result-title" hidden>
-      <div class="result-symbol" id="result-symbol" aria-hidden="true"></div>
-      <p class="eyebrow">Your working-style animals</p>
-      <h2 id="result-title" tabindex="-1"></h2>
-      <p class="result-summary" id="result-summary"></p>
-      <div class="result-grid" id="result-grid"></div>
-      <p class="result-motto">Future is moooooore than a job!</p>
+      <article class="personality-card" id="personality-card">
+        <div class="personality-card-topline">
+          <span class="personality-card-brand">牛馬再就業協會</span>
+          <span class="personality-card-edition">保險業務特質探索卡</span>
+        </div>
+        <div class="result-cover">
+          <div class="result-cover-copy">
+            <p class="eyebrow">最能代表你的業務特質</p>
+            <h2 id="result-title" tabindex="-1"></h2>
+            <p class="result-cover-quote" id="result-quote"></p>
+          </div>
+          <div class="result-illustration" id="result-illustration" aria-hidden="true"></div>
+          <div class="result-cover-caption">每一種特質，都能為客戶帶來價值</div>
+        </div>
+        <div class="result-card-body">
+          <div class="result-traits">
+            <span class="result-traits-label">你的核心特質</span>
+            <div class="result-trait-list" id="result-traits"></div>
+          </div>
+          <p class="result-summary" id="result-summary"></p>
+          <div class="result-grid" id="result-grid"></div>
+          <div class="result-brand-close">Future is moooooore than a job!</div>
+        </div>
+      </article>
+      <section class="score-chart-section" id="score-chart-section" aria-labelledby="score-chart-title">
+        <h3 id="score-chart-title">你的職場特質分布</h3>
+        <p class="score-chart-subtitle">每一種特質，都是你職場冒險的一部分。</p>
+        <div class="score-chart-layout">
+          <svg class="score-chart" id="score-chart" viewBox="0 0 200 200" role="img" aria-label="六種職場行為傾向的相對分布"></svg>
+          <ul class="score-chart-legend" id="score-chart-legend" aria-label="職場特質分布圖例"></ul>
+        </div>
+        <p class="score-chart-subtitle">此圖呈現六種職場行為傾向的相對分布，並非六種人格的混合結果。</p>
+      </section>
       <div class="result-actions">
         <button class="primary-button" id="share-button" type="button">分享我的結果 <span aria-hidden="true">↗</span></button>
         <button class="secondary-button" id="restart-button" type="button">再測一次</button>
@@ -652,168 +1049,196 @@
   </main>
 
   <footer class="site-footer">
-    本測驗為趣味職涯探索原型，結果僅供自我觀察與交流，不是經過心理計量驗證的專業人格測驗、心理診斷或招募篩選依據。
+    本測驗為趣味職涯探索工具，結果僅供自我觀察與交流，不是經過心理計量驗證的專業人格測驗、心理診斷或招募篩選依據，也不代表實際業務績效。
   </footer>
 
   <script>
     const animals = {
       cow: {
-        name: "衝鋒牛", emoji: "🐂", trait: "行動力・企圖心",
-        description: "想到方向就願意踏出第一步，喜歡把目標拆成行動，讓事情持續往前。",
-        strength: "把想法化為進度，遇到挑戰也願意先試再調整。",
-        arena: "適合需要推進進度、勇於開路與持續達成目標的情境。"
+        name: "衝鋒牛", emoji: "🐂", image: "assets/cow.png", trait: "行動力・企圖心",
+        cardQuote: "先踏出第一步，\n再陪客戶找到下一步。",
+        description: "你傾向主動開啟對話、採取行動並持續跟進，讓服務和規劃不只停留在想法。",
+        strength: "願意主動接觸、練習與追蹤，把計畫轉成實際行動。",
+        arena: "適合客戶開發、安排會面與需要持續推進的服務情境。",
+        growth: "行動前先確認客戶意願，並為每次跟進設定清楚且合宜的目的。",
+        nanshan: "在客戶接觸、需求訪談與後續服務中，發揮積極行動與穩定跟進的特質。"
       },
       tiger: {
-        name: "領山虎", emoji: "🐯", trait: "領導力・決策力",
-        description: "善於看見團隊需要什麼，願意整合資訊、承擔決策，帶大家朝共同方向前進。",
-        strength: "凝聚共識、整理分工，讓團隊知道下一步怎麼走。",
-        arena: "適合需要統整方向、協調資源與帶領團隊的情境。"
+        name: "領山虎", emoji: "🐯", image: "assets/tiger.png", trait: "領導力・決策力",
+        cardQuote: "把問題接下來，\n也把後續安排清楚。",
+        description: "你習慣釐清責任與下一步，在需要做決定或統整行動時，願意承擔並帶動進度。",
+        strength: "能整理優先順序、協調分工，並為客戶問題安排後續處理。",
+        arena: "適合統籌客戶服務、協調團隊資源與推進複雜案件的情境。",
+        growth: "做決定前確認客戶需求與可行選項，並清楚溝通安排和時程。",
+        nanshan: "在保障討論、客戶問題處理與團隊協作中，展現責任感與統整能力。"
       },
       eagle: {
-        name: "遠見鷹", emoji: "🦅", trait: "洞察力・策略思考",
-        description: "習慣先觀察全局、理解需求，再比較不同做法，找出更長遠且合適的路徑。",
-        strength: "釐清問題核心、看見風險，也能把複雜資訊整理成脈絡。",
-        arena: "適合需要分析需求、規劃策略與思考長期影響的情境。"
+        name: "遠見鷹", emoji: "🦅", image: "assets/eagle.png", trait: "洞察力・策略思考",
+        cardQuote: "先看懂真正的需求，\n再一起找合適的規劃。",
+        description: "你會先整理資訊、確認顧慮與風險，再思考適合客戶現況和長期需求的做法。",
+        strength: "擅長釐清問題、查證資訊與掌握需求背後的原因。",
+        arena: "適合需求分析、保障優先順序整理與長期規劃的情境。",
+        growth: "把分析轉成簡明易懂的說明，並讓客戶有充分時間理解與選擇。",
+        nanshan: "在需求訪談、風險盤點與保障方案說明中，發揮周全分析與長期思考。"
       },
       leopard: {
-        name: "靈活豹", emoji: "🐆", trait: "應變力・執行力",
-        description: "面對變化能快速調整步伐，不被原定計畫困住，找到當下可行的解法。",
-        strength: "靈活修正做法，把突發狀況轉成可執行的下一步。",
-        arena: "適合步調多變、需要即時應對與彈性執行的情境。"
+        name: "靈活豹", emoji: "🐆", image: "assets/leopard.png", trait: "應變力・執行力",
+        cardQuote: "情況不同，\n就找更合適的溝通方式。",
+        description: "你能因應客戶反應與現場變化調整做法，在不同限制下尋找合宜的下一步。",
+        strength: "擅長調整溝通方式、彈性安排工作並回應臨時變化。",
+        arena: "適合需要彈性互動、安排追蹤與處理突發狀況的服務情境。",
+        growth: "調整方式時也守住專業界線，重要資訊與承諾記得查證、留存。",
+        nanshan: "在客戶溝通、預算調整與售後服務中，靈活回應不同需求與狀況。"
       },
       wolf: {
-        name: "群戰狼", emoji: "🐺", trait: "團隊合作・協調力",
-        description: "在意一起完成目標，擅長交換資訊、連結夥伴，讓不同角色互相補位。",
-        strength: "促進合作與資源共享，讓團隊不必各自單打獨鬥。",
-        arena: "適合仰賴跨角色合作、共同解題與互相支援的情境。"
+        name: "群戰狼", emoji: "🐺", image: "assets/wolf.png", trait: "團隊合作・協調力",
+        cardQuote: "遇到難題不用單打獨鬥，\n找對夥伴一起把事情做好。",
+        description: "你重視經驗交流與互相支援，遇到不確定的問題會尋求合適的同事或窗口合作。",
+        strength: "願意請教、分享資訊並協助夥伴，讓客戶問題獲得適當支援。",
+        arena: "適合新人培訓、跨單位合作與需要共同確認專業資訊的情境。",
+        growth: "合作時清楚說明問題、分工與回覆責任，避免讓客戶在窗口間等待。",
+        nanshan: "在團隊演練、理賠或服務諮詢與客戶支援中，串連夥伴共同解題。"
       },
       dog: {
-        name: "暖心犬", emoji: "🐕", trait: "同理心・溝通力",
-        description: "會留意對方的感受與顧慮，透過傾聽和對話，建立安心而長久的互動。",
-        strength: "聽懂真正的需要，讓溝通不只停在表面答案。",
-        arena: "適合需要傾聽需求、建立信任與細心溝通的情境。"
+        name: "暖心犬", emoji: "🐕", image: "assets/dog.png", trait: "同理心・溝通力",
+        cardQuote: "先理解對方在意什麼，\n再用舒服的步調陪伴。",
+        description: "你會留意客戶的感受、生活變化與顧慮，透過傾聽和對話建立信任。",
+        strength: "善於了解對方真正擔心的事，也尊重客戶的意願和步調。",
+        arena: "適合需求訪談、人生階段變化的關懷與長期客戶服務。",
+        growth: "在同理之外也清楚說明可提供的協助，並尊重對方拒絕或暫緩的選擇。",
+        nanshan: "在客戶關係經營、家庭需求討論與售後關懷中，展現細心傾聽與溝通。"
       }
     };
 
     const questions = [
       {
         title: "第一天上班，主管突然給你一項挑戰",
-        context: "你剛加入保險業，主管說：「這週試著認識三位可能需要保障規劃的人吧！」你完全沒有業務經驗，連第一句話該怎麼說都不知道。你會怎麼開始？",
+        context: "你剛加入保險業，主管說：「今天試著認識三位可能需要保障規劃的人吧！」你完全沒有業務經驗，連第一句話該怎麼說都不知道。你會怎麼開始？",
         options: [
-          ["先找一位熟悉的人聊聊，實際試過再調整。", "cow"],
-          ["請教前輩如何開啟話題，和同梯一起練習。", "wolf"],
-          ["研究不同族群可能面臨的保障需求，再決定接觸方式。", "eagle"],
-          ["先從日常聊天開始，了解對方最近的生活變化。", "dog"]
+          ["先找一位熟悉的人聊聊，實際試過再調整。", { cow: 2, leopard: 1 }],
+          ["請教前輩如何開啟話題，和同梯一起練習。", { wolf: 2, dog: 1 }],
+          ["研究不同族群可能面臨的保障需求，再決定接觸方式。", { eagle: 3 }],
+          ["先從日常聊天開始，了解對方最近的生活變化。", { dog: 3 }]
         ]
       },
       {
         title: "客戶說：「保險？我沒興趣。」",
-        context: "你鼓起勇氣向一位潛在客戶介紹保障規劃，對方聽到「保險」兩個字就皺眉，說：「我真的不需要。」你會怎麼回應？",
+        context: "你鼓起勇氣向一位好朋友介紹保障規劃，結果對方聽到「保險」兩個字就皺眉，說：「我真的不需要，不要再和我提起。」你會怎麼回應？",
         options: [
-          ["尊重他的想法，詢問是否有過不好的保險經驗。", "dog"],
-          ["簡短說明自己想提供的協助，再確認對方是否願意了解。", "cow"],
-          ["判斷對方目前沒有意願，留下適當的聯絡方式後結束。", "eagle"],
-          ["換個更生活化的角度，看看對方是否願意談保障需求。", "leopard"]
+          ["單刀直入與他表達不滿，自己只是協助他調整保障沒有要推銷，並且封鎖他。", { tiger: 2, cow: 1 }],
+          ["簡短說明自己能提供的服務，留下適當的聯絡方式後結束。", { leopard: 2, dog: 1 }],
+          ["判斷對方目前沒有意願，過一段時間再問他。", { eagle: 2, dog: 1 }],
+          ["和他約喝咖啡，但帶著主管出現談保障。", { wolf: 3 }]
         ]
       },
       {
         title: "客戶問了一題，你完全不會",
         context: "你正在向客戶解釋保單內容，對方突然問了一個非常細的理賠問題。你不確定正確答案，但客戶正等著你回應。你會怎麼做？",
         options: [
-          ["坦白表示需要確認，馬上查詢正式資料。", "cow"],
-          ["請教熟悉理賠的同事，一起釐清問題。", "wolf"],
-          ["先確認客戶真正擔心的情境，再整理需要查證的資訊。", "eagle"],
-          ["約定明確回覆時間，將問題交由適合的窗口協助確認。", "tiger"]
+          ["表示需要確認，馬上現場查詢資料給予回覆。", { leopard: 2, cow: 1 }],
+          ["當場表現專業態度，給予一個印象中的回答。反正他也不會發現。", { cow: 2, tiger: 1 }],
+          ["先確認客戶真正擔心的情境，再整理需要查證的資訊向理賠窗口或者有經驗的業務確認。", { eagle: 1, dog: 1, wolf: 1 }],
+          ["單刀直入與他說明，這種細節不是現階段需要考量的因素。", { tiger: 2, eagle: 1 }]
         ]
       },
       {
-        title: "你的客戶突然宣布要結婚了！",
+        title: "你的核心客戶突然宣布要結婚了！",
         context: "一位長期聯繫的客戶興奮地告訴你：「我下個月要結婚了！」你想到人生階段改變可能伴隨新的保障需求。你的第一個反應是？",
         options: [
-          ["先恭喜對方，聊聊婚禮和新生活的規劃。", "dog"],
-          ["找適當時機邀請對方重新檢視保障需求。", "cow"],
-          ["思考婚後家庭責任的改變，整理可能需要注意的風險。", "eagle"],
-          ["詢問是否方便安排一次完整的家庭保障討論。", "tiger"]
+          ["先恭喜對方，聊聊婚禮安排和新生活的規劃。", { dog: 3 }],
+          ["送禮恭喜後邀請對方重新檢視新家庭保障需求。", { cow: 1, leopard: 1, dog: 1 }],
+          ["協助他思考婚後家庭責任的改變，整理可能需要注意的風險給他。", { eagle: 2, dog: 1 }],
+          ["單刀直入安排一次完整的家庭保障討論。", { cow: 2, tiger: 1 }]
         ]
       },
       {
         title: "客戶的預算突然砍半",
         context: "你和客戶討論保障規劃已經一段時間，原本談得很順利，但他突然說：「最近開銷太大，保費預算只能剩一半。」你會怎麼處理？",
         options: [
-          ["重新確認哪些保障是客戶最在意、最需要的。", "eagle"],
-          ["立即思考其他符合預算的方案組合。", "leopard"],
-          ["和客戶一起列出現階段最重要的保障優先順序。", "tiger"],
-          ["先了解財務壓力的原因，確認是否需要暫緩規劃。", "dog"]
+          ["重新確認哪些保障是客戶最在意、最需要的。", { eagle: 2, dog: 1 }],
+          ["立即思考其他符合預算且能盡量做足保障的方案。", { leopard: 2, eagle: 1 }],
+          ["與他聊天確認是否真是預算問題還是有其餘影響決策的因素", { dog: 2, eagle: 1 }],
+          ["先了解財務壓力的原因，指出他財務有欠考慮的地方並請求他改善。", { tiger: 2, eagle: 1 }]
         ]
       },
       {
         title: "客戶已讀不回，你會怎麼辦？",
-        context: "一位客戶原本對保障規劃很有興趣，但你傳完資料後，他連續一週都沒有回覆，訊息顯示已讀。你最可能採取哪個行動？",
+        context: "一位客戶原本對保障規劃很有興趣，也有詢問保障細節。但你傳完資料後，他連續一週都沒有回覆。訊息顯示已讀。你最可能採取哪個行動？",
         options: [
-          ["再傳一次簡短訊息，詢問是否還有需要協助的地方。", "cow"],
-          ["重新檢視之前的對話，思考對方可能有哪些疑慮。", "eagle"],
-          ["調整追蹤方式，等到適當時機再聯繫。", "leopard"],
-          ["先尊重對方的空間，不急著追問，維持自然互動。", "dog"]
+          ["再傳一次訊息，先用與他有關的軟性訊息測試他會不會回覆。", { dog: 2, leopard: 1 }],
+          ["重新檢視之前的討論內容，思考對方可能有哪些疑慮尚未解決。", { eagle: 3 }],
+          ["打電話單刀直入詢問 !", { cow: 2, tiger: 1 }],
+          ["向主管尋求協助。", { wolf: 3 }]
         ]
       },
       {
-        title: "明天要進行新人的提案演練",
-        context: "教育訓練基地突然安排一場模擬客戶提案。你們四人一組，要在明天早上提出完整的保障規劃與說明方式。你會自然地負責哪個部分？",
+        title: "剛進入保險業不到一個月，客戶有稅務與傳承規劃，你選擇 ?",
+        context: "你認識一位高資產客戶阿姨，靠外型快速取得對方信任並希望你協助規劃家庭資產傳承與降低稅務，但你尚未具備相關的知識。你會選擇？",
         options: [
-          ["統整大家的分工與時程，確保明天能順利上場。", "tiger"],
-          ["研究案例資料，找出規劃邏輯與重要風險。", "eagle"],
-          ["負責實際演練，把簡報內容講得清楚有說服力。", "cow"],
-          ["協助組員互相練習，讓每個人都能發揮。", "wolf"]
+          ["帶上直屬主管向阿姨約訪，用專業為阿姨達成規劃需求。", { wolf: 2, cow: 1 }],
+          ["自己上，靠美色征服阿姨，不需要太過專業啦 !", { tiger: 2, leopard: 1 }],
+          ["帶上較懂相關知識的同事，事成後包紅包或者請吃飯答謝。", { wolf: 3 }],
+          ["知難而退，這張餅現在自己吃不下來。", { tiger: 2, eagle: 1 }]
         ]
       },
       {
         title: "同梯夥伴最近一直碰壁",
-        context: "一位和你一起受訓的新人連續幾次拜訪都不順利，開始懷疑自己是不是不適合做業務。明天你們還有共同演練。你會怎麼幫他？",
+        context: "一位和你一起受訓的新人連續幾次拜訪都不順利，開始懷疑自己是不是不適合做業務。你會怎麼幫他？",
         options: [
-          ["先聽他說說最近遇到的挫折，陪他整理心情。", "dog"],
-          ["陪他一起模擬拜訪，練習幾種不同的開場方式。", "leopard"],
-          ["找其他同梯分享經驗，讓他知道自己不是孤軍奮戰。", "wolf"],
-          ["協助他整理失敗原因，設定下一次練習的改善目標。", "tiger"]
+          ["陪他一起拜訪他的客戶，並提出若簽約要分傭金。", { wolf: 2, cow: 1 }],
+          ["先聽他說說最近遇到的挫折，陪他一起模擬拜訪。", { dog: 2, wolf: 1 }],
+          ["管他去死，他陣亡才不關我的事。", { tiger: 3 }],
+          ["花五分鐘協助他整理心情，並安慰他一定會成功的。", { dog: 2, leopard: 1 }]
         ]
       },
       {
         title: "重要客戶的預約臨時取消",
         context: "你為今天下午的會面準備了三天，客戶卻在出門前十分鐘傳訊息：「抱歉，我今天臨時有事，先取消。」你會怎麼運用空下來的時間？",
         options: [
-          ["立刻安排其他待辦事項，讓今天仍然有所進展。", "cow"],
-          ["調整原本的工作計畫，處理可以提前完成的事。", "leopard"],
-          ["聯絡同事，看看有沒有需要互相支援的工作。", "wolf"],
-          ["重新檢視準備的內容，讓下次會面更有效率。", "eagle"]
+          ["馬上傳訊息約定下次拜訪時間，大尾魚不可以輕易放過。", { cow: 2, leopard: 1 }],
+          ["太讚了回家睡覺，獎勵自己今天也很認真了。", { dog: 2, tiger: 1 }],
+          ["要求與主管同行拜訪並讓主管請自己吃飯。", { wolf: 2, leopard: 1 }],
+          ["安排接觸其他客戶，讓更多潛在客戶進入銷售漏斗第一層初次見面。", { cow: 2, eagle: 1 }]
         ]
       },
       {
-        title: "客戶突然很生氣地打電話來",
-        context: "一位客戶認為自己之前沒有充分理解保單內容，現在情緒激動地打電話來抱怨：「當初怎麼沒跟我講清楚！」你會怎麼處理？",
+        title: "客戶突然很生氣地打電話來罵公司與罵你",
+        context: "一位客戶認為你沒講清楚保單內容，現在情緒激動地打電話來抱怨：「當初怎麼沒跟我講清楚，害我的投資賠到本金！」你會怎麼處理？",
         options: [
-          ["先讓對方完整表達不滿，確認他最在意的問題。", "dog"],
-          ["核對原始資料與說明紀錄，釐清事實。", "eagle"],
-          ["確認問題後，主動安排後續處理與回覆時程。", "tiger"],
-          ["依照問題性質，請適合的服務或主管窗口共同協助。", "wolf"]
+          ["回答完後原地下班。", { leopard: 2, tiger: 1 }],
+          ["把電話塞給我主管讓他安撫他的情緒，罵完他就不能罵我囉~", { wolf: 2, leopard: 1 }],
+          ["確認問題後，主動安排後續處理與回覆時程。", { leopard: 2, tiger: 1 }],
+          ["電話放下，高歌離席，宣布不服務這位仁兄了。", { tiger: 3 }]
         ]
       },
       {
-        title: "團隊裡的王牌業務突然請假",
-        context: "明天有一場重要的客戶說明活動，但原本負責主講的資深同事臨時無法出席。主管問：「有人願意接手嗎？」你的第一個念頭是？",
+        title: "這是你第三天進公司，早會結束後可以自由安排行程",
+        context: "公司每天都有早會宣達商品知識，與單位績優同仁分享，是每天早上都要進行的重要的活動。早會結束後大家解散，自由安排自己的拜訪行程。你的第一個念頭是？",
         options: [
-          ["我可以試試看，先把需要準備的資料拿來。", "cow"],
-          ["先確認現場需要哪些角色，再安排人力。", "tiger"],
-          ["調整活動流程，改成更適合現有人力的形式。", "leopard"],
-          ["找熟悉相關內容的同事，組成臨時支援小組。", "wolf"]
+          ["開心，回家睡覺。", { leopard: 2, dog: 1 }],
+          ["到處抓著其他前輩請教業務經驗。", { wolf: 2, eagle: 1 }],
+          ["安排探班或者規劃保障等拜訪行程。", { wolf: 2, cow: 1 }],
+          ["在公司裝忙給直屬主管看。", { eagle: 2, leopard: 1 }]
+        ]
+      },
+      {
+        title: "你的核心客戶阿姨突然反客為主，向單身的你推薦自己的子女",
+        context: "這位客戶阿姨在你剛踏入保險業時便支持你的業績，十分認可你的專業，把你當親近的晚輩對待。有一天他建議你和他的大齡未婚子女以交往為前提接觸看看。哪個答案最接近你的想法？",
+        options: [
+          ["單刀直入向客戶表示自己目前沒有相關計畫。", { tiger: 2, dog: 1 }],
+          ["持續向客戶推廣未婚族長照險的重要性，將話題帶回保險保障。", { leopard: 2, cow: 1 }],
+          ["為了業績壯烈犧牲，試圖讓客戶全家擁有強大保障。", { cow: 2, wolf: 1 }],
+          ["不敢得罪但也不想答應客戶，用幾個對象搪塞過去。", { dog: 2, leopard: 1 }]
         ]
       },
       {
         title: "一年後，你希望自己成為哪種業務員？",
         context: "你已經累積了一年的工作經驗。某天主管問：「接下來，你最希望自己在哪個方面有所突破？」哪個答案最接近你的想法？",
         options: [
-          ["我想挑戰更高的目標，看看自己能做到哪裡。", "cow"],
-          ["我想成為能帶領新人、整合團隊的人。", "tiger"],
-          ["我想更精準地分析需求，提供有長遠價值的規劃。", "eagle"],
-          ["我想成為客戶遇到重要人生變化時，會想到的人。", "dog"]
+          ["我想挑戰更高的業績目標，拿到國際業務獎項如 MDRT、IDA等。", { cow: 3 }],
+          ["我想成為能帶領新人成長為獨當一面業務的人。", { tiger: 2, wolf: 1 }],
+          ["我想更精準地分析需求，為客戶提供有長遠價值的規劃。", { eagle: 3 }],
+          ["自由安排時間，可以與其他人交代我有正職工作。", { leopard: 2, cow: 1 }]
         ]
       }
     ];
@@ -832,6 +1257,135 @@
     const backButton = document.querySelector("#back-button");
     const progressTrack = document.querySelector(".progress-track");
     const progressValue = document.querySelector("#progress-value");
+
+    document.querySelector("#question-total-copy").textContent = String(questions.length);
+    document.querySelector("#question-total-meta").textContent = String(questions.length);
+    document.querySelector("#quiz-count").textContent = `01 / ${questions.length}`;
+    progressTrack.setAttribute("aria-valuemax", String(questions.length));
+    document.querySelector('meta[name="description"]').content =
+      `用 ${questions.length} 道保險業工作情境題，探索你的業務特質與職場動物。`;
+
+    function calculateScores(answers) {
+      if (answers.length !== questions.length || answers.some((answer) => !Number.isInteger(answer))) {
+        throw new Error(`請完成全部 ${questions.length} 題後再計算結果。`);
+      }
+
+      const scores = Object.fromEntries(Object.keys(animals).map((animalId) => [animalId, 0]));
+      answers.forEach((answer, questionIndex) => {
+        const option = questions[questionIndex].options[answer];
+        if (!option) throw new Error(`第 ${questionIndex + 1} 題的答案無效。`);
+
+        const weights = option[1];
+        const questionTotal = Object.entries(weights).reduce((total, [animalId, points]) => {
+          if (!(animalId in scores) || !Number.isInteger(points) || points < 1) {
+            throw new Error(`第 ${questionIndex + 1} 題包含無效的計分資料。`);
+          }
+          scores[animalId] += points;
+          return total + points;
+        }, 0);
+
+        if (questionTotal !== 3) {
+          throw new Error(`第 ${questionIndex + 1} 題的選項配分總和必須為 3 分。`);
+        }
+      });
+
+      const totalScore = Object.values(scores).reduce((total, score) => total + score, 0);
+      if (totalScore !== questions.length * 3) {
+        throw new Error(`計分總和錯誤：預期 ${questions.length * 3} 分，實際 ${totalScore} 分。`);
+      }
+      return scores;
+    }
+
+    function determineWinner(scores, answers) {
+      const highestScore = Math.max(...Object.values(scores));
+      const finalists = Object.keys(animals).filter((animalId) => scores[animalId] === highestScore);
+      if (finalists.length === 1) return finalists[0];
+
+      const highPointCounts = Object.fromEntries(Object.keys(animals).map((animalId) => [animalId, 0]));
+      answers.forEach((answer, questionIndex) => {
+        const weights = questions[questionIndex].options[answer][1];
+        Object.entries(weights).forEach(([animalId, points]) => {
+          if (points >= 2) highPointCounts[animalId] += 1;
+        });
+      });
+
+      const tieBreakOrder = ["cow", "tiger", "eagle", "leopard", "wolf", "dog"];
+      const highestTieBreak = Math.max(...finalists.map((animalId) => highPointCounts[animalId]));
+      return tieBreakOrder.find((animalId) =>
+        finalists.includes(animalId) && highPointCounts[animalId] === highestTieBreak
+      );
+    }
+
+    function renderScoreChart(scores, winnerAnimalId) {
+      const animalIds = Object.keys(animals);
+      const colors = {
+        cow: "#b74325",
+        tiger: "#ef8508",
+        eagle: "#527a68",
+        leopard: "#6d79a5",
+        wolf: "#8c638c",
+        dog: "#d48573"
+      };
+      const totalScore = Object.values(scores).reduce((total, score) => total + score, 0);
+      if (totalScore !== questions.length * 3) {
+        throw new Error("圓餅圖分數總和不正確，無法產生結果分布。");
+      }
+
+      const exactTenths = animalIds.map((animalId) => scores[animalId] / totalScore * 1000);
+      const percentageTenths = exactTenths.map(Math.floor);
+      const remainingTenths = 1000 - percentageTenths.reduce((total, value) => total + value, 0);
+      const remainderOrder = exactTenths
+        .map((value, index) => ({ index, fraction: value - percentageTenths[index] }))
+        .sort((left, right) => right.fraction - left.fraction || left.index - right.index);
+      for (let index = 0; index < remainingTenths; index += 1) {
+        percentageTenths[remainderOrder[index].index] += 1;
+      }
+
+      const chart = document.querySelector("#score-chart");
+      chart.replaceChildren();
+      chart.setAttribute("aria-label", `六種職場行為傾向相對分布，${animals[winnerAnimalId].name}為最高分結果`);
+      let startAngle = -90;
+      animalIds.forEach((animalId) => {
+        if (scores[animalId] === 0) return;
+        const sliceAngle = scores[animalId] / totalScore * 360;
+        const endAngle = startAngle + sliceAngle;
+        const startRadians = startAngle * Math.PI / 180;
+        const endRadians = endAngle * Math.PI / 180;
+        const startX = 100 + 90 * Math.cos(startRadians);
+        const startY = 100 + 90 * Math.sin(startRadians);
+        const endX = 100 + 90 * Math.cos(endRadians);
+        const endY = 100 + 90 * Math.sin(endRadians);
+        const slice = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        slice.setAttribute("d", `M 100 100 L ${startX} ${startY} A 90 90 0 ${sliceAngle > 180 ? 1 : 0} 1 ${endX} ${endY} Z`);
+        slice.setAttribute("fill", colors[animalId]);
+        slice.setAttribute("data-animal-id", animalId);
+        chart.append(slice);
+        startAngle = endAngle;
+      });
+
+      const legend = document.querySelector("#score-chart-legend");
+      legend.replaceChildren();
+      animalIds.forEach((animalId, index) => {
+        const item = document.createElement("li");
+        item.dataset.animalId = animalId;
+        item.classList.toggle("is-winner", animalId === winnerAnimalId);
+
+        const swatch = document.createElement("span");
+        swatch.className = "score-chart-swatch";
+        swatch.style.backgroundColor = colors[animalId];
+        swatch.setAttribute("aria-hidden", "true");
+
+        const name = document.createElement("span");
+        name.textContent = animals[animalId].name;
+
+        const percent = document.createElement("span");
+        percent.className = "score-chart-percent";
+        percent.textContent = `${(percentageTenths[index] / 10).toFixed(1)}%`;
+
+        item.append(swatch, name, percent);
+        legend.append(item);
+      });
+    }
 
     function renderQuestion() {
       const question = questions[currentQuestion];
@@ -882,41 +1436,83 @@
       questionTitle.focus({ preventScroll: true });
     }
 
+    function createResultArt(animal) {
+      if (animal.image) {
+        const image = document.createElement("img");
+        image.src = animal.image;
+        image.alt = "";
+        image.decoding = "async";
+        return image;
+      }
+
+      const fallback = document.createElement("span");
+      fallback.className = "result-illustration-fallback";
+      fallback.textContent = animal.emoji;
+      return fallback;
+    }
+
+    function createResultCard(icon, title, description) {
+      const card = document.createElement("article");
+      card.className = "result-card";
+
+      const heading = document.createElement("div");
+      heading.className = "result-card-heading";
+
+      const iconElement = document.createElement("span");
+      iconElement.className = "result-card-icon";
+      iconElement.setAttribute("aria-hidden", "true");
+      iconElement.textContent = icon;
+
+      const titleElement = document.createElement("span");
+      titleElement.textContent = title;
+
+      const descriptionElement = document.createElement("p");
+      descriptionElement.textContent = description;
+
+      heading.append(iconElement, titleElement);
+      card.append(heading, descriptionElement);
+      return card;
+    }
+
     function showResult() {
-      const scores = Object.fromEntries(Object.keys(animals).map((key) => [key, 0]));
-      selectedAnswers.forEach((answer, questionIndex) => {
-        const animal = questions[questionIndex].options[answer][1];
-        scores[animal] += 1;
+      const scores = calculateScores(selectedAnswers);
+      const winnerAnimalId = determineWinner(scores, selectedAnswers);
+      const animal = animals[winnerAnimalId];
+      const resultTitle = document.querySelector("#result-title");
+      resultTitle.textContent = animal.name;
+      document.querySelector("#result-quote").textContent = animal.cardQuote;
+      document.querySelector("#result-summary").textContent =
+        `你的核心能力是「${animal.trait}」。${animal.description}`;
+
+      const illustration = document.querySelector("#result-illustration");
+      illustration.replaceChildren(createResultArt(animal));
+
+      const traits = document.querySelector("#result-traits");
+      traits.replaceChildren();
+      animal.trait.split("・").forEach((trait) => {
+        const chip = document.createElement("span");
+        chip.className = "trait-chip";
+        chip.textContent = trait;
+        traits.append(chip);
       });
-
-      const highestScore = Math.max(...Object.values(scores));
-      const topAnimals = Object.keys(animals).filter((key) => scores[key] === highestScore);
-      const topDetails = topAnimals.map((key) => animals[key]);
-      const summary = topDetails.length === 1
-        ? `你的選擇最常展現「${topDetails[0].trait}」。${topDetails[0].description}這是你在職場中可以運用的一份優勢，也能隨著經驗持續發展。`
-        : `你的選擇同時映照出 ${topDetails.map((animal) => animal.name).join("、")} 的特質。這些能力都是你可以調度的資源，不必只用單一標籤定義自己。`;
-
-      document.querySelector("#result-symbol").textContent = topDetails.map((animal) => animal.emoji).join(" ");
-      document.querySelector("#result-title").textContent = topDetails.length === 1
-        ? `你是「${topDetails[0].name}」！`
-        : "你的職場動物組合";
-      document.querySelector("#result-summary").textContent = summary;
 
       const resultGrid = document.querySelector("#result-grid");
       resultGrid.replaceChildren();
-      topDetails.forEach((animal) => {
-        const card = document.createElement("article");
-        card.className = "result-card";
-        card.innerHTML = `<div class="result-card-heading"><span aria-hidden="true"></span><div></div></div><p></p><p><strong>你的亮點：</strong></p><p><strong>可以發揮的情境：</strong></p>`;
-        card.querySelector(".result-card-heading span").textContent = animal.emoji;
-        card.querySelector(".result-card-heading div").textContent = animal.name;
-        card.querySelectorAll("p")[0].textContent = `${animal.trait}｜${animal.description}`;
-        card.querySelectorAll("p")[1].append(document.createTextNode(animal.strength));
-        card.querySelectorAll("p")[2].append(document.createTextNode(animal.arena));
-        resultGrid.append(card);
-      });
+      const animalGroup = document.createElement("section");
+      animalGroup.className = "result-animal-group";
+      const animalCards = document.createElement("div");
+      animalCards.className = "result-animal-cards";
+      animalCards.append(
+        createResultCard("⚡", "你在團隊中", animal.strength),
+        createResultCard("⚑", "適合發揮的情境", animal.arena),
+        createResultCard("✿", "可以繼續培養", animal.growth),
+        createResultCard("◉", "在南山可以怎麼發揮？", animal.nanshan)
+      );
+      animalGroup.append(animalCards);
+      resultGrid.append(animalGroup);
 
-      const shareText = `我的職場動物是${topDetails.map((animal) => animal.name).join(" × ")}！\n${topDetails.map((animal) => animal.trait).join("／")}\n來測測你的職場動物是哪一種！\nFuture is moooooore than a job!`;
+      renderScoreChart(scores, winnerAnimalId);
+      const shareText = `我的職場動物是【${animal.name}】${animal.emoji}！\n\n我的核心能力：${animal.trait}\n\n你的職場動物是哪一種？\n\nFuture is moooooore than a job!`;
       document.querySelector("#share-text").value = shareText;
       document.querySelector("#share-fallback").hidden = true;
       document.querySelector("#share-notice").textContent = "";
